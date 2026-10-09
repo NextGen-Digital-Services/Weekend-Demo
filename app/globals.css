@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-cream: #F7F1E5;
+  --color-sand: #E9DCC3;
+  --color-terracotta: #B5573A;
+  --color-cypress: #4B5A3A;
+  --color-espresso: #2A1F1A;
+  --color-gold: #B8925A;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-espresso);
+  }
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 20s linear infinite;
+}
